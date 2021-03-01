@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="#FF3366"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="Danh mục"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:id="@+id/imgdiamond"
+                android:src="@drawable/diamond"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:textColor="#070707"
+                android:text="CAO CẤP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:id="@+id/imgstar"
+                android:src="@drawable/favorite"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:textColor="#070707"
+                android:text="ĐẶT NHIỀU NHẤT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:id="@+id/imgsale"
+                android:src="@drawable/sale"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:textColor="#070707"
+                android:text="KHUYẾN MÃI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#070707"
+            android:text="DANH MỤC SẢN PHẨM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ExpandableListView
+            android:id="@+id/expandlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
